@@ -35,7 +35,7 @@ void imguiParameters::createRealParameter(imguiParameters::imguiParameter* param
 				rparam->setFct(value);
 		}
 		if (ImGui::IsItemHovered())
-			ImGui::SetTooltip(helpText.c_str());
+			ImGui::SetTooltip("%s", helpText.c_str());
 	}
 }
 
@@ -57,7 +57,7 @@ void imguiParameters::createBoolParameter(imguiParameters::imguiParameter* param
 			}
 		}
 		if (ImGui::IsItemHovered())
-			ImGui::SetTooltip(helpText.c_str());
+			ImGui::SetTooltip("%s", helpText.c_str());
 	}
 }
 
@@ -80,7 +80,7 @@ void imguiParameters::createStringParameter(imguiParameters::imguiParameter* par
 				sparam->setFct(value);
 		}
 		if (ImGui::IsItemHovered())
-			ImGui::SetTooltip(helpText.c_str());
+			ImGui::SetTooltip("%s", helpText.c_str());
 	}
 }
 
@@ -99,7 +99,7 @@ void imguiParameters::createVec3rParameter(imguiParameters::imguiParameter* para
 				vparam->setFct(value);
 		}
 		if (ImGui::IsItemHovered())
-			ImGui::SetTooltip(helpText.c_str());
+			ImGui::SetTooltip("%s", helpText.c_str());
 	}
 }
 
@@ -118,7 +118,7 @@ void imguiParameters::createVec3fParameter(imguiParameters::imguiParameter* para
 				vparam->setFct(value);
 		}
 		if (ImGui::IsItemHovered())
-			ImGui::SetTooltip(helpText.c_str());
+			ImGui::SetTooltip("%s", helpText.c_str());
 	}
 }
 
@@ -155,7 +155,7 @@ bool imguiParameters::createEnumParameter(imguiParameters::imguiParameter* param
 			ImGui::EndCombo();
 		}
 		if (ImGui::IsItemHovered())
-			ImGui::SetTooltip(helpText.c_str());
+			ImGui::SetTooltip("%s", helpText.c_str());
 	}
 	return false;
 }
@@ -172,7 +172,7 @@ void imguiParameters::createFunctionParameter(imguiParameters::imguiParameter* p
 				fparam->function();
 		}
 		if (ImGui::IsItemHovered())
-			ImGui::SetTooltip(helpText.c_str());
+			ImGui::SetTooltip("%s", helpText.c_str());
 	}
 }
 

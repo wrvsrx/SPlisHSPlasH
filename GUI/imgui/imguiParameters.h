@@ -143,7 +143,7 @@ namespace SPH
 					rparam->setFct(value);
 			}
 			if (ImGui::IsItemHovered())
-				ImGui::SetTooltip(helpText.c_str());
+				ImGui::SetTooltip("%s", helpText.c_str());
 		}
 	}
 }

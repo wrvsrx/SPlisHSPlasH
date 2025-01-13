@@ -3,3 +3,5 @@
 /Utilities/Version.h
 /bin/
 /outputs/
+/data/Scenes/Cache/
+/imgui.ini

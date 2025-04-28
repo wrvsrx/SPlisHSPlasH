@@ -5,3 +5,6 @@
 /outputs/
 /data/Scenes/Cache/
 /imgui.ini
+
+# clangd cache
+/.cache/

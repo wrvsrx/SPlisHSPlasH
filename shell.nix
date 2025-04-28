@@ -12,6 +12,9 @@
   xorg,
 }:
 mkShell {
+  shellHook = ''
+    export NIX_ENFORCE_NO_NATIVE=
+  '';
   nativeBuildInputs = [
     cmake
     pkg-config

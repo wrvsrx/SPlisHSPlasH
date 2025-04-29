@@ -2,6 +2,7 @@
   cmake,
   pkg-config,
   mkShell,
+  llvmPackages,
 
   freeglut,
   libGLU,
@@ -11,15 +12,18 @@
 
   xorg,
 }:
-mkShell {
+mkShell.override { inherit (llvmPackages) stdenv; } {
   shellHook = ''
     export NIX_ENFORCE_NO_NATIVE=
   '';
   nativeBuildInputs = [
     cmake
     pkg-config
+    llvmPackages.clang-tools
   ];
   buildInputs = [
+    llvmPackages.openmp
+
     freeglut
     libGLU
     libGL
